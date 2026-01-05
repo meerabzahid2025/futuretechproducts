@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home • FUTURE TECH</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Slideshow Styles (SAFE & PAGE-SPECIFIC) -->
+  <style>
+  .slideshow {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fadeSlides 9s infinite;
+  }
+
+  .slide:nth-child(1) {
+    background-image: url('holodesk.jfif');
+    animation-delay: 0s;
+  }
+
+  .slide:nth-child(2) {
+    background-image: url('robot.jpg');
+    animation-delay: 3s;
+  }
+
+  .slide:nth-child(3) {
+    background-image: url('smartmirror.jfif');
+    animation-delay: 6s;
+  }
+
+  @keyframes fadeSlides {
+    0% { opacity: 0; }
+    11.11% { opacity: 1; }   /* fade in */
+    33.33% { opacity: 1; }   /* fully visible */
+    44.44% { opacity: 0; }   /* fade out */
+    100% { opacity: 0; }     /* stay hidden until loop */
+  }
+
+  /* Slide overlay text */
+  .slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .slide-overlay h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .slide-overlay p {
+    font-size: 18px;
+  }
+</style>
+
+
+</head>
+<body>
+
+<div class="page-wrapper">   
+
+  <!-- Header -->
+  <header>
+    <div class="logo">FUTURE TECH</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- FULL-WIDTH SLIDESHOW -->
+  <section class="slideshow">
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+
+    <div class="slide-overlay">
+      <div>
+        <h1>Future Tech Products</h1>
+        <p>AI Powered Devices</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <div class="container">
+    <h1>Featured Products</h1>
+    
+
+    <div class="grid">
+      <div class="card">
+        <a href="holodesk.html">
+          <div class="card-image" style="background-image: url('holodesk.jfif');">
+            <div class="card-text">
+              <h4>HOLOGRAPHIC DESK</h4>
+              <p>$14,499</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="robot.html">
+          <div class="card-image" style="background-image: url('robot.jpg');">
+            <div class="card-text">
+              <h4>SMART AI ROBOT</h4>
+              <p>$40,099</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="smartmirror.html">
+          <div class="card-image" style="background-image: url('smartmirror.jfif');">
+            <div class="card-text">
+              <h4>SMART MIRROR</h4>
+              <p>$5,499</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- TESTIMONIALS -->
+   <div class="container">
+    <h1>Customer Testimonials</h1>
+
+    <p>⭐️⭐️⭐️⭐️⭐️</p>
+    <p>"I had the chance to test the Holographic Desk, and it completely transformed my workspace. The 3D holograms make multitasking effortless and immersive."</p> 
+    <p> - Alex R., Designer</p>
+
+    <p>⭐️⭐️⭐️⭐️☆</p>
+    <p>"The gesture-based controls are surprisingly intuitive. I felt like I was working in the future already!"</p>
+    <p> - Priya S., Engineer</p>
+
+  
+
+    <p>⭐️⭐️⭐️⭐️⭐️</p>
+    <p>"Testing the Smart Mirror was eye-opening! I could see my posture, vitals, and even skin condition in real-time. Like having a personal health coach at home."</p> 
+    <p> - Sarah L., Fitness Enthusiast</p>
+
+    
+
+    <p>⭐️⭐️⭐️☆☆</p>
+    <p>"The Smart Mirror gave me actionable insights I didn’t get anywhere else. From posture adjustments to skin monitoring, it’s like having a personal health assistant."</p>
+    <p> - Emily W., Health-conscious User</p>
+
+    <p>⭐️⭐️⭐️⭐️⭐️</p>
+    <p>"I tested the Smart AI Robot at home, and it’s like having an intelligent assistant who actually understands my daily schedule. Tasks and reminders handled effortlessly."</p>
+    <p> - James P., Tech Enthusiast</p>
+
+    <p>⭐️⭐️⭐️⭐️☆</p>
+    <p>"The AI quickly adapted to my habits and personalized its responses. Hands-free, efficient, and surprisingly conversational!"</p>
+    <p> - Anna M., Student</p>
+
+    <p>⭐️⭐️⭐️⭐️⭐️</p>
+    <p>"From scheduling meetings to managing smart home devices, the Smart AI Robot made my day more productive. It feels like stepping into the future."</p>
+    <p> - Robert H., Entrepreneur</p>
+
+  </div>
+
+  <section id="brand-story" style="padding: 60px 20px; max-width: 900px; margin: auto; font-family: Arial, sans-serif; line-height: 1.7;">
+  <h2 style="font-size: 2.5em; margin-bottom: 30px; text-align: center;">Our Story</h2>
+  <p style="font-size: 1.1em; color: #333; text-align: center; margin-bottom: 40px;">
+    FUTURE TECH began as a simple dream in a small dorm room. We were students, curious about the world and driven by a desire to explore the unknown. Armed with little more than laptops, textbooks, and an unshakable fascination with artificial intelligence, we began experimenting, learning, and building.
+  </p>
+  <p style="font-size: 1em; color: #555; margin-bottom: 30px;">
+    Late nights turned into breakthroughs, failures became lessons, and every line of code brought us closer to a vision: to create technology that doesn’t just serve people but empowers them. We immersed ourselves in AI, understanding its potential not just to automate, but to inspire, to connect, and to transform lives.
+  </p>
+  <p style="font-size: 1em; color: #555; margin-bottom: 30px;">
+    Today, FUTURE TECH stands at the forefront of innovation. From the first spark of curiosity to pioneering AI-powered devices like the <strong>Holographic Desk</strong>, <strong>Smart Mirror</strong>, and <strong>Smart AI Robot</strong>, our journey has been defined by relentless curiosity, bold experimentation, and a belief that technology can open doors to unimaginable possibilities.
+  </p>
+  <p style="font-size: 1em; color: #555; margin-bottom: 30px;">
+    Our story is far from over. Every product we launch, every new idea we explore, carries the spirit of that small dorm room—a commitment to learning, imagining, and shaping a future where technology works for humanity. We are FUTURE TECH, and we are building tomorrow, today.
+  </p>
+</section>
+
+  </div>
+
+<!-- CONTACT US SECTION -->
+<div class="container" id="contact">
+  <h2>Contact Us</h2>
+  <p>Have questions or need help? Reach out to us anytime!</p>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h4>Email</h4>
+      <p>📧 support@futuretech.pk</p>
+    </div>
+    <div class="contact-card">
+      <h4>Phone</h4>
+      <p>📞 +92 300 1234567</p>
+    </div>
+    <div class="contact-card">
+      <h4>Location</h4>
+      <p>📍 Lahore, Pakistan</p>
+    </div>
+  </div>
+
+  <form class="contact-form" action="#" method="post">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+
+  <footer>
+    &copy; 2025 Tech Store — All rights reserved.
+  </footer>
+
+</div>  
+
+</body>
+</html>
